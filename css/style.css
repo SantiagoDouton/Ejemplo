@@ -1,44 +1,117 @@
-body    {
-    background-color: rgb(29, 161, 89);
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+
+.caja-padre-body{
+    border: 1px solid lightsalmon;
+    display: flex;
+    flex-direction: column;
 }
 
-h1{
+.caja-padre-body div{
+    border: 1px solid  lightgray;
+    padding: 100px;
+    font-size: 20px;
+}
+
+#titulo{
+    border: 8px blue solid;
     font-size: 100px;
-    color: crimson;
+    color: darkblue;
     background-color: coral;
     text-align: center;
+    font-family: "Dancing Script";
 }
-li  {
-    font-size: 40px;
-    color: crimson;
-    background-color: rgb(39, 35, 34);
-    text-align: right;
+
+#titulo:hover{
+    background-color: slateblue;
 }
-text    {
-    font-size: 40px;
-    color: rgb(220, 20, 130);
-    background-color: rgb(116, 39, 11);
-    text-align: left;
+
+.contenedor{
+    width: 83%;
+    margin: auto;
+    overflow: hidden;
 }
-form {
-    font-size: 40px;
-    color: darkmagenta;
-    background-color: rgb(216, 137, 34);
+
+.contenedordos{
+    background-image: url(/imagenes/trianglify-lowres.png);
+    height: 70px;
+    margin-bottom: 30px;
     text-align: center;
 }
-.tardis{
-    color: firebrick;
-    background-color: darkblue;
+
+body{
+    background-image: linear-gradient(90deg, #14213d, #4d908e);
 }
-.fraseuno{
-    background-color: blueviolet;    
+  
+.foto{
+    border: 8px royalblue dashed;
+    width: 22% 
 }
-.frasedos{
-    background-color: darkorange;
+
+.listaordenada{
+   border: 8px rebeccapurple dotted;
+   width: 30%;
+   color: red;
+   background-color: rgb(29, 30, 32);
+   font-size: 22px;
+   border-radius: 15px;
+   font-family: 'Dancing Script', cursive;
 }
-.frasetres{
-    background-color: darkslateblue;
+
+.nucbanetta{
+    font-size: 30px;
+    color: rgb(220, 183, 20);
+    margin-left: 10px;
 }
-.frasecuatro{
-    background-color: deeppink;
+
+.formulario{
+    font-size: 20px;
+    color: rgb(220, 20, 130);
+    margin-left: 10px;
+    font-family: 'Bungee Inline', cursive;
+}
+
+.nuclario{
+    border: 8px rgb(136, 10, 10) double;
+    width: 60%;
+    border-radius: 15px;
+}
+
+.frasetitulo{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(40, 192, 86);
+    text-decoration: underline rgb(0, 255, 191);
+}
+
+.frases{
+    font-size: 20px;
+    color: tomato;
+    margin-left: 10px;
+}
+
+.fotosfinales{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.opacidadimagenes img:hover{
+    opacity: 0,7;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    color: cadetblue;
+    border: 1px solid lightgray
+}
+
+@media (min-width: 768px){
+    footer{
+    display: flex;
+    justify-content: space-between;
+}
 }
